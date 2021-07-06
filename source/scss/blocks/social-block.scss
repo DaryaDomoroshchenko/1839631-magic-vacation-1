@@ -53,11 +53,6 @@
   &:hover,
   .social-block--active & {
     color: $c-purple;
-
-    // &::before {
-    //   width: 112.5%;
-    //   height: 112.5%;
-    // }
   }
 
   &:focus {
@@ -230,15 +225,20 @@
   }
 
   .social-block.social-block--active &--fb {
-    transition: transform 0.4s, opacity 0.4s, color 0.3s;
+    transition-property: transform, opacity, color;
+    transition-duration: 0.4s, 0.4s, 0.3s;
   }
 
   .social-block.social-block--active &--insta {
-    transition: transform 0.4s 0.1s, opacity 0.4s 0.1s, color 0.3s;
+    transition-property: transform, opacity, color;
+    transition-duration: 0.4s, 0.4s, 0.3s;
+    transition-delay: 0.1s, 0.1s, 0s;
   }
 
   .social-block.social-block--active &--vk {
-    transition: transform 0.4s 0.2s, opacity 0.4s 0.2s, color 0.3s;
+    transition-property: transform, opacity, color;
+    transition-duration: 0.4s, 0.4s, 0.3s;
+    transition-delay: 0.2s, 0.2s, 0s;
   }
 
   svg {
